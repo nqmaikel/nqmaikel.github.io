@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rabbit — The Rabbit Hole · 54 free research tools for AI assistants</title>
+<meta name="description" content="Rabbit (The Rabbit Hole) puts macro data, quant methods, public-company filings and academic papers behind one MCP URL. 54 tools. Free to use. Hosted — nothing to install.">
+<meta name="theme-color" content="#07090c">
+<meta property="og:title" content="Rabbit — The Rabbit Hole">
+<meta property="og:description" content="54 research tools for AI assistants behind one MCP URL. Free to use. Hosted. Nothing to install.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Rabbit — home">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#rabbit-mark"/></svg>
+      <span>Rabbit</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#tools" data-i18n="nav.tools">Tools</a>
+      <a href="#connect" data-i18n="nav.connect">Connect</a>
+      <a href="#demos" data-i18n="nav.demos">Demos</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#community" data-i18n="nav.community">Community</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang" id="lang" type="button" aria-label="Switch language / Cambiar idioma">ES</button>
+      <a class="btn btn-sm" href="#connect" data-i18n="nav.cta">Connect</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="burrow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Rabbit · The Rabbit Hole — free to use</span></p>
+      <h1 data-i18n="hero.h1">Go down the rabbit hole.<br><em>Come back with evidence.</em></h1>
+      <p class="lead" data-i18n="hero.lead">Macro data, quant methods, public-company filings and academic papers — <strong>54 research tools</strong> for your AI assistant, behind <strong>one URL</strong>. Hosted for you. Nothing to install. Free to use.</p>
+
+      <div class="codebar" role="group" aria-label="MCP endpoint">
+        <span class="codebar-label">MCP</span>
+        <code id="endpoint">https://the-macro-dashboard.com/mcp</code>
+        <button class="copy" type="button" data-copy="https://the-macro-dashboard.com/mcp" data-i18n="copy">Copy</button>
+      </div>
+      <p class="fine" data-i18n="hero.fine">Works in any MCP client · OAuth sign-in · endpoint may move to a Rabbit domain — this page always shows the current one.</p>
+
+      <div class="cta-row">
+        <a class="btn" href="#connect" data-i18n="hero.cta1">Connect in 30 seconds</a>
+        <a class="btn btn-ghost" href="#tools" data-i18n="hero.cta2">See all 54 tools</a>
+      </div>
+    </div>
+
+    <div class="hero-card" aria-label="Illustrative example of an assistant using Rabbit">
+      <div class="term">
+        <div class="term-bar"><span></span><span></span><span></span><b data-i18n="hero.term">illustrative session</b></div>
+        <pre class="term-body" id="term"><span class="l you">you     › Is the liquidity tailwind fading?</span>
+<span class="l">rabbit  › <b>data_net_liquidity</b>     <i class="ok">✓</i></span>
+<span class="l">          <b>data_yield_curve</b>      <i class="ok">✓</i></span>
+<span class="l">          <b>get_chart_recipe</b>      <i class="ok">✓</i></span>
+<span class="l dim">          sourced series + chart spec,</span>
+<span class="l dim">          rendered in your assistant.</span></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <ul class="stats" aria-label="Rabbit at a glance">
+      <li><b data-count="54">54</b><span data-i18n="stats.tools">tools behind one endpoint</span></li>
+      <li><b data-count="4">4</b><span data-i18n="stats.fam">tool families</span></li>
+      <li><b>1</b><span data-i18n="stats.url">URL to connect</span></li>
+      <li><b>$0</b><span data-i18n="stats.free">to use — no plan, no card</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap">
+    <h2 data-i18n="why.h2">Four tunnels. One hole.</h2>
+    <p class="sub" data-i18n="why.sub">Research tools used to live in separate servers, with separate sign-ins and separate configs. Rabbit folds them into a single hosted endpoint, so your assistant can move from a Treasury curve to a 10-K to a backtest audit without you reconfiguring anything.</p>
+    <div class="grid g4">
+      <article class="card reveal">
+        <div class="ico">∞</div>
+        <h3 data-i18n="why.c1h">One connection</h3>
+        <p data-i18n="why.c1p">Add one URL. All 54 tools show up together, namespaced by family so assistants pick the right one.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ico">☁</div>
+        <h3 data-i18n="why.c2h">Hosted, nothing to install</h3>
+        <p data-i18n="why.c2p">No package, no Docker, no keys to juggle. We run the servers; you run your assistant.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ico">§</div>
+        <h3 data-i18n="why.c3h">Evidence, not advice</h3>
+        <p data-i18n="why.c3p">Outputs cite official sources and flag missing data. Rabbit supports research — it never promises returns.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ico">◐</div>
+        <h3 data-i18n="why.c4h">Your data stays yours</h3>
+        <p data-i18n="why.c4p">Calculations and charts are assembled in your own assistant. Rabbit doesn't run your code or touch your brokerage.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section alt" id="tools">
+  <div class="wrap">
+    <h2 data-i18n="tools.h2">54 tools, four families</h2>
+    <p class="sub" data-i18n="tools.sub">Every tool is read-only research tooling. Counts below are the live tool catalog of the unified endpoint.</p>
+
+    <div class="families">
+
+      <article class="family reveal" style="--hue:28">
+        <header>
+          <div><span class="tag">Macro</span><h3 data-i18n="f.macro.h">Market context &amp; charts</h3></div>
+          <div class="count"><b>28</b><span data-i18n="tools.word">tools</span></div>
+        </header>
+        <p data-i18n="f.macro.p">Source recipes, calculations and chart specs for the macro picture — plus five official-data tools that pull straight from FRED, EIA and CFTC.</p>
+        <div class="split">
+          <div><b>23</b> <span data-i18n="f.macro.native">native workbench tools</span></div>
+          <div><b>5</b> <span data-i18n="f.macro.data">official data tools</span></div>
+        </div>
+        <h4 data-i18n="f.macro.data.h">Official data</h4>
+        <ul class="chips mono">
+          <li>data_net_liquidity</li><li>data_yield_curve</li><li>data_official_calendar</li><li>data_oil_cushing</li><li>data_cot</li>
+        </ul>
+        <h4 data-i18n="f.macro.cov">Workbench covers</h4>
+        <ul class="chips">
+          <li>Regime cockpit</li><li>Growth–inflation quadrant</li><li>Business cycle</li><li>Net liquidity</li><li>Yield curve</li><li>Real rates</li><li>Financial conditions</li><li>GDP nowcast</li><li>Fed policy &amp; implied path</li><li>Credit spreads</li><li>Inflation expectations</li><li>Sector rotation</li><li>Energy inventories</li><li>Portfolio scenarios</li>
+        </ul>
+      </article>
+
+      <article class="family reveal" style="--hue:200">
+        <header>
+          <div><span class="tag">QuantFi</span><h3 data-i18n="f.qf.h">Quant methods &amp; backtests</h3></div>
+          <div class="count"><b>10</b><span data-i18n="tools.word">tools</span></div>
+        </header>
+        <p data-i18n="f.qf.p">A methodology copilot: turn an idea into a falsifiable plan, design a point-in-time backtest, then audit it for leakage, timing errors and missing costs.</p>
+        <ul class="toollist">
+          <li><code>search_knowledge</code><span data-i18n="t.qf1">Search the reviewed quant-finance notes</span></li>
+          <li><code>get_topic</code><span data-i18n="t.qf2">Open one note with its source</span></li>
+          <li><code>build_research_plan</code><span data-i18n="t.qf3">Hypothesis → bias-aware protocol</span></li>
+          <li><code>specify_strategy</code><span data-i18n="t.qf4">Explicit universe, signal, sizing, risk</span></li>
+          <li><code>design_backtest</code><span data-i18n="t.qf5">Point-in-time architecture &amp; tests</span></li>
+          <li><code>audit_backtest</code><span data-i18n="t.qf6">Leakage, timing, cost review</span></li>
+          <li><code>design_validation</code><span data-i18n="t.qf7">Walk-forward, holdout, embargo</span></li>
+          <li><code>analyze_results</code><span data-i18n="t.qf8">Read results without the hype</span></li>
+          <li><code>generate_implementation</code><span data-i18n="t.qf9">Contract &amp; test plan for your stack</span></li>
+          <li><code>server_info</code><span data-i18n="t.qf10">Capabilities and limits</span></li>
+        </ul>
+      </article>
+
+      <article class="family reveal" style="--hue:150">
+        <header>
+          <div><span class="tag">Premia</span><h3 data-i18n="f.pr.h">Official public-company facts</h3></div>
+          <div class="count"><b>10</b><span data-i18n="tools.word">tools</span></div>
+        </header>
+        <p data-i18n="f.pr.p">Structured facts and reports from official public sources (SEC, BLS), with stable evidence references and honest coverage flags.</p>
+        <ul class="toollist">
+          <li><code>status</code><span data-i18n="t.pr1">What's covered, with examples</span></li>
+          <li><code>search_companies</code><span data-i18n="t.pr2">Find by name, ticker or ID</span></li>
+          <li><code>company_financials</code><span data-i18n="t.pr3">Trends, margins, cash metrics</span></li>
+          <li><code>research_company</code><span data-i18n="t.pr4">Evidence pack in one call</span></li>
+          <li><code>list_reports</code><span data-i18n="t.pr5">Annual, quarterly, current reports</span></li>
+          <li><code>read_report</code><span data-i18n="t.pr6">Text and tables with references</span></li>
+          <li><code>search_report</code><span data-i18n="t.pr7">Literal search inside a report</span></li>
+          <li><code>compare_reports</code><span data-i18n="t.pr8">What was added or removed</span></li>
+          <li><code>filing_briefing</code><span data-i18n="t.pr9">Daily / weekly market-wide briefing</span></li>
+          <li><code>company_briefing</code><span data-i18n="t.pr10">Briefing for up to ten companies</span></li>
+        </ul>
+      </article>
+
+      <article class="family reveal" style="--hue:285">
+        <header>
+          <div><span class="tag">Edge</span><h3 data-i18n="f.ed.h">Papers, ranked S/A/B/C</h3></div>
+          <div class="count"><b>6</b><span data-i18n="tools.word">tools</span></div>
+        </header>
+        <p data-i18n="f.ed.p">Academic paper discovery for trading research: find what's worth reading, in priority order, with direct arXiv links.</p>
+        <ul class="toollist">
+          <li><code>find_papers</code><span data-i18n="t.ed1">1–30 papers for your project</span></li>
+          <li><code>search_papers</code><span data-i18n="t.ed2">Topic search with tier scores</span></li>
+          <li><code>tier_guide</code><span data-i18n="t.ed3">What S, A, B and C mean</span></li>
+          <li><code>read_paper</code><span data-i18n="t.ed4">Read one paper from its arXiv ID</span></li>
+          <li><code>author_papers</code><span data-i18n="t.ed5">Papers by 1–10 researchers</span></li>
+          <li><code>find_researchers</code><span data-i18n="t.ed6">Who works on this topic</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="sumrow reveal" aria-label="Tool count summary">
+      <span><b>28</b> Macro</span><i>+</i><span><b>10</b> QuantFi</span><i>+</i><span><b>10</b> Premia</span><i>+</i><span><b>6</b> Edge</span><i>=</i><span class="total"><b>54</b> <em data-i18n="tools.word">tools</em></span>
+    </div>
+
+    <article class="discord reveal">
+      <div>
+        <span class="tag">Discord</span>
+        <h3 data-i18n="dc.h">Research Tierlist bot</h3>
+        <p data-i18n="dc.p">The same paper-ranking engine as Edge, inside Discord. Run <code>/papers</code>, describe your trading project, and get a private S/A/B/C reading list with direct arXiv links. It lives alongside the 54 tools rather than inside the endpoint.</p>
+      </div>
+      <div class="tiers" aria-label="S, A, B and C tiers"><b class="s">S</b><b class="a">A</b><b class="b">B</b><b class="c">C</b></div>
+    </article>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section class="section" id="connect">
+  <div class="wrap">
+    <h2 data-i18n="con.h2">Connect in three steps</h2>
+    <p class="sub" data-i18n="con.sub">Rabbit speaks MCP over Streamable HTTP. If your assistant supports remote MCP servers, it works.</p>
+
+    <ol class="steps">
+      <li class="reveal"><span class="n">1</span><div><h3 data-i18n="con.s1h">Add the URL</h3><p data-i18n="con.s1p">Paste the endpoint into your client's MCP settings — or use a snippet below.</p></div></li>
+      <li class="reveal"><span class="n">2</span><div><h3 data-i18n="con.s2h">Sign in once</h3><p data-i18n="con.s2p">Your client opens an OAuth window. Approve it and you're done — no API key to copy.</p></div></li>
+      <li class="reveal"><span class="n">3</span><div><h3 data-i18n="con.s3h">Ask something</h3><p data-i18n="con.s3p">Try “What does the yield curve look like versus a year ago?” and watch the tool calls.</p></div></li>
+    </ol>
+
+    <div class="tabs" data-tabs>
+      <div class="tablist" role="tablist" aria-label="Client">
+        <button role="tab" aria-selected="true" data-tab="cursor">Cursor</button>
+        <button role="tab" aria-selected="false" data-tab="claude-code">Claude Code</button>
+        <button role="tab" aria-selected="false" data-tab="claude-desktop">Claude (app / web)</button>
+        <button role="tab" aria-selected="false" data-tab="generic" data-i18n="con.any">Any MCP client</button>
+      </div>
+
+      <div class="tabpanel" data-panel="cursor">
+        <p class="hint"><span data-i18n="con.cursor">Add to</span> <code>~/.cursor/mcp.json</code> <span data-i18n="con.cursor2">(or the project's</span> <code>.cursor/mcp.json</code>):</p>
+        <div class="code"><button class="copy" type="button" data-copy-target="#c-cursor" data-i18n="copy">Copy</button>
+<pre id="c-cursor">{
+  "mcpServers": {
+    "rabbit": {
+      "url": "https://the-macro-dashboard.com/mcp"
+    }
+  }
+}</pre></div>
+      </div>
+
+      <div class="tabpanel" data-panel="claude-code" hidden>
+        <p class="hint" data-i18n="con.cc">Run once in your terminal:</p>
+        <div class="code"><button class="copy" type="button" data-copy-target="#c-cc" data-i18n="copy">Copy</button>
+<pre id="c-cc">claude mcp add --transport http rabbit https://the-macro-dashboard.com/mcp</pre></div>
+        <p class="hint" data-i18n="con.cc2">Then run <code>/mcp</code> inside Claude Code and choose “Authenticate” for rabbit.</p>
+      </div>
+
+      <div class="tabpanel" data-panel="claude-desktop" hidden>
+        <p class="hint" data-i18n="con.cd">In Settings → Connectors, choose “Add custom connector”, then enter:</p>
+        <div class="code"><button class="copy" type="button" data-copy-target="#c-cd" data-i18n="copy">Copy</button>
+<pre id="c-cd">Name: Rabbit
+URL:  https://the-macro-dashboard.com/mcp</pre></div>
+        <p class="hint" data-i18n="con.cd2">Menu names vary by plan and version. Any client with remote-MCP support follows the same pattern.</p>
+      </div>
+
+      <div class="tabpanel" data-panel="generic" hidden>
+        <p class="hint" data-i18n="con.gen">Point any Streamable-HTTP MCP client at the endpoint. To poke around first, use the MCP Inspector:</p>
+        <div class="code"><button class="copy" type="button" data-copy-target="#c-gen" data-i18n="copy">Copy</button>
+<pre id="c-gen">npx @modelcontextprotocol/inspector@latest
+# transport: Streamable HTTP
+# URL: https://the-macro-dashboard.com/mcp</pre></div>
+      </div>
+    </div>
+
+    <div class="notice reveal">
+      <b data-i18n="con.noteh">Heads-up: the endpoint may change.</b>
+      <span data-i18n="con.note">The URL above is the current production endpoint. We plan to move Rabbit to its own domain; when that happens this page will show the new URL and the old one will keep working through a transition period.</span>
+    </div>
+  </div>
+</section>
+
+<!-- DEMOS -->
+<section class="section alt" id="demos">
+  <div class="wrap">
+    <h2 data-i18n="demo.h2">What it looks like in practice</h2>
+    <p class="sub" data-i18n="demo.sub">Four ways people go down the hole. Tool names are real; the sessions are illustrative.</p>
+
+    <div class="demo" data-demo>
+      <div class="demo-tabs" role="tablist" aria-label="Demos">
+        <button role="tab" aria-selected="true" data-d="0"><b>Macro</b><span data-i18n="demo.t0">Regime check</span></button>
+        <button role="tab" aria-selected="false" data-d="1"><b>QuantFi</b><span data-i18n="demo.t1">Backtest audit</span></button>
+        <button role="tab" aria-selected="false" data-d="2"><b>Premia</b><span data-i18n="demo.t2">Filing diff</span></button>
+        <button role="tab" aria-selected="false" data-d="3"><b>Edge</b><span data-i18n="demo.t3">Reading list</span></button>
+      </div>
+
+      <div class="demo-body">
+        <div class="demo-pane" data-p="0">
+          <p class="ask" data-i18n="demo.a0">“Is the liquidity tailwind fading, and how does the curve compare to a year ago?”</p>
+          <ol class="calls">
+            <li><code>data_net_liquidity</code><span data-i18n="demo.c00">Fed balance-sheet liquidity from official FRED series</span></li>
+            <li><code>data_yield_curve</code><span data-i18n="demo.c01">Today vs 1 month vs 1 year ago</span></li>
+            <li><code>get_chart_recipe</code><span data-i18n="demo.c02">A sourced chart recipe your assistant renders</span></li>
+          </ol>
+          <p class="out" data-i18n="demo.o0">You get a short, sourced read on the regime, with the chart built in your own session.</p>
+        </div>
+        <div class="demo-pane" data-p="1" hidden>
+          <p class="ask" data-i18n="demo.a1">“Here's my momentum backtest. Is it lying to me?”</p>
+          <ol class="calls">
+            <li><code>audit_backtest</code><span data-i18n="demo.c10">Static review for look-ahead, leakage and timing errors</span></li>
+            <li><code>design_validation</code><span data-i18n="demo.c11">Walk-forward, purging and embargo plan</span></li>
+            <li><code>analyze_results</code><span data-i18n="demo.c12">Reads your numbers and lists the missing evidence</span></li>
+          </ol>
+          <p class="out" data-i18n="demo.o1">You get findings and evidence gaps — never a profitability promise.</p>
+        </div>
+        <div class="demo-pane" data-p="2" hidden>
+          <p class="ask" data-i18n="demo.a2">“What changed between this company's last two annual reports?”</p>
+          <ol class="calls">
+            <li><code>search_companies</code><span data-i18n="demo.c20">Resolve the company</span></li>
+            <li><code>list_reports</code><span data-i18n="demo.c21">Find the two filings</span></li>
+            <li><code>compare_reports</code><span data-i18n="demo.c22">Additions and removals in business, results, outlook</span></li>
+          </ol>
+          <p class="out" data-i18n="demo.o2">You get a diff with evidence references back to the source filing.</p>
+        </div>
+        <div class="demo-pane" data-p="3" hidden>
+          <p class="ask" data-i18n="demo.a3">“I'm building a pairs-trading strategy. What should I read first?”</p>
+          <ol class="calls">
+            <li><code>find_papers</code><span data-i18n="demo.c30">Ranks relevant papers into S/A/B/C tiers</span></li>
+            <li><code>tier_guide</code><span data-i18n="demo.c31">Explains what each tier means — and its limits</span></li>
+            <li><code>read_paper</code><span data-i18n="demo.c32">Reads the top pick from its arXiv ID</span></li>
+          </ol>
+          <p class="out" data-i18n="demo.o3">You get a prioritized reading list with direct links and a summary of the first paper.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section class="section" id="principles">
+  <div class="wrap">
+    <h2 data-i18n="pr.h2">Free, hosted, and honest about it</h2>
+    <div class="grid g3">
+      <article class="card reveal"><h3 data-i18n="pr.c1h">Free to use</h3><p data-i18n="pr.c1p">Rabbit is free to use. No paid tiers on this page, no card, no trial clock.</p></article>
+      <article class="card reveal"><h3 data-i18n="pr.c2h">Hosted, closed-source</h3><p data-i18n="pr.c2p">The tools run on our servers and the code is not published. You never install or maintain anything.</p></article>
+      <article class="card reveal"><h3 data-i18n="pr.c3h">Honest limits</h3><p data-i18n="pr.c3p">Backtests are simulations, coverage can be incomplete, and none of it is financial advice. Rabbit says so in its outputs, too.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt" id="faq">
+  <div class="wrap narrow">
+    <h2 data-i18n="faq.h2">Questions</h2>
+
+    <details class="reveal" open>
+      <summary data-i18n="faq.q1">Is Rabbit really free?</summary>
+      <p data-i18n="faq.a1">Yes — Rabbit is free to use. You sign in with OAuth so the service can tell users apart and protect itself from abuse, but there's no card and no plan to pick.</p>
+    </details>
+    <details class="reveal">
+      <summary data-i18n="faq.q2">Is it open source?</summary>
+      <p data-i18n="faq.a2">No. Rabbit is a free, hosted service and its code is closed. This website's repository contains only the static pages you're reading — no server code.</p>
+    </details>
+    <details class="reveal">
+      <summary data-i18n="faq.q3">Why hosted instead of a package I install?</summary>
+      <p data-i18n="faq.a3">Because the tools lean on live official data and curated knowledge that would be painful to run yourself. One URL means no dependencies, no updates to chase, and every client gets the same catalog.</p>
+    </details>
+    <details class="reveal">
+      <summary data-i18n="faq.q4">What about my privacy and my data?</summary>
+      <p data-i18n="faq.a4">Rabbit doesn't ask for brokerage credentials, doesn't place orders and doesn't execute your code. Charts and calculations are assembled in your own assistant. Like any hosted service it handles operational basics (who is signed in, which tool ran, how long it took). Don't paste secrets into prompts.</p>
+    </details>
+    <details class="reveal">
+      <summary data-i18n="faq.q5">Does it give financial advice or trade for me?</summary>
+      <p data-i18n="faq.a5">No. Rabbit is research tooling: it surfaces data, methods and evidence. Decisions — and risk — stay with you.</p>
+    </details>
+    <details class="reveal">
+      <summary data-i18n="faq.q6">Where does the data come from?</summary>
+      <p data-i18n="faq.a6">Official and primary sources: FRED, EIA and CFTC for macro series; SEC and BLS for public-company and labor facts; arXiv for papers. Attribution and coverage caveats are preserved in outputs.</p>
+    </details>
+    <details class="reveal">
+      <summary data-i18n="faq.q7">Which assistants work with it?</summary>
+      <p data-i18n="faq.a7">Anything that supports remote MCP over Streamable HTTP with OAuth — Cursor, Claude Code, Claude's app and web, and other MCP clients.</p>
+    </details>
+    <details class="reveal">
+      <summary data-i18n="faq.q8">Will the URL change?</summary>
+      <p data-i18n="faq.a8">Possibly. We intend to move to a dedicated Rabbit domain. This site will always list the current endpoint, and we'll keep the old one alive during the transition.</p>
+    </details>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="section" id="community">
+  <div class="wrap">
+    <div class="community reveal">
+      <div>
+        <h2 data-i18n="com.h2">Found a rabbit hole worth digging?</h2>
+        <p class="sub" data-i18n="com.sub">Tell us what to add, report a rough edge, or share what you built. We read everything.</p>
+      </div>
+      <div class="com-links">
+        <a class="btn" href="#" aria-disabled="true" data-placeholder="discord">Discord <small data-i18n="com.soon">invite coming soon</small></a>
+        <a class="btn btn-ghost" href="#" aria-disabled="true" data-placeholder="email">Email <small data-i18n="com.soon2">address coming soon</small></a>
+        <a class="btn btn-ghost" href="https://github.com/nqmaikel" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <div class="brand"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#rabbit-mark"/></svg><span>Rabbit <small>· The Rabbit Hole</small></span></div>
+    <p class="legal" data-i18n="foot.legal">Rabbit provides research tooling, not investment advice. Backtests are simulations, not forecasts. Data comes from official public sources and may be delayed or incomplete. Rabbit is independent and not affiliated with the sources or clients named on this page.</p>
+    <p class="legal">© <span id="year">2026</span> Rabbit</p>
+  </div>
+</footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb35c"/><stop offset="1" stop-color="#ff6a3d"/></linearGradient>
+    <symbol id="rabbit-mark" viewBox="0 0 64 64">
+      <rect x="21" y="6" width="8" height="24" rx="4" fill="url(#rg)" transform="rotate(-10 25 30)"/>
+      <rect x="35" y="6" width="8" height="24" rx="4" fill="url(#rg)" transform="rotate(10 39 30)"/>
+      <ellipse cx="32" cy="43" rx="19" ry="12" fill="none" stroke="url(#rg)" stroke-width="3.5"/>
+      <ellipse cx="32" cy="43" rx="11" ry="6.5" fill="none" stroke="#ffb35c" stroke-opacity=".55" stroke-width="2.5"/>
+      <ellipse cx="32" cy="43" rx="4.5" ry="2.5" fill="#ff8a3d"/>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
