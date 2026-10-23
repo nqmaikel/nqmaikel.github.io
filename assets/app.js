@@ -80,7 +80,7 @@
     'con.noteh': 'Aviso: el endpoint puede cambiar.', 'con.note': 'La URL de arriba es el endpoint de producción actual. Podemos mover Rabbit a su propio dominio; si ocurre, esta página mostrará la nueva URL y la antigua seguirá funcionando durante un periodo de transición.',
     'faq.h2': 'Preguntas, <em class="horror">respondidas</em>.',
     'q1': '¿Cómo funciona el plan gratis?', 'a1': 'Eliges <strong>una familia</strong> (Macro, QuantFi, Premia o Edge) y la usas gratis, para siempre, sin límite de uso y sin tarjeta. Accedes con Discord. Pro ({price} €/mes) abre las cuatro familias, también sin límite.',
-    'q2': '¿Qué incluye Pro y cómo se paga?', 'a2': 'Pro cuesta {price} € al mes por uso ilimitado de las cuatro familias ({total} herramientas). El cobro es a través de <strong>Whop</strong>. El pago con Whop llegará pronto; hasta entonces el plan gratis está abierto para todos.',
+    'q2': '¿Qué incluye Pro y cómo se paga?', 'a2': 'Pro cuesta {price} € al mes por uso ilimitado de las cuatro familias ({total} herramientas). El cobro es a través de <strong>Whop</strong>. Suscríbete desde la sección de precios; el plan gratis sigue abierto para todos.',
     'q3': '¿Puedo ver el código?', 'a3': 'No. Rabbit es un servicio <strong>alojado y de código cerrado</strong>: gratis de usar, pero el código del servidor no se publica. El repositorio de esta web solo contiene el sitio estático.',
     'q4': '¿Los resultados muestran de dónde vienen los datos?', 'a4': 'Sí. <strong>Los resultados de Premia y de datos oficiales siempre muestran su fuente</strong>, con atribución a la agencia que los publica, por ejemplo BLS, SEC o BEA. Rabbit es independiente y no está avalado por esas agencias.',
     'q5': '¿Es asesoramiento de inversión?', 'a5': 'No. Rabbit ofrece herramientas de investigación. Los backtests son simulaciones, no previsiones, y los datos pueden llegar con retraso o incompletos. Nada aquí promete rentabilidad.',
@@ -129,7 +129,7 @@
   $$('[data-n]').forEach(function (n) { n.textContent = T[n.getAttribute('data-n')]; });
   var wb = $('#whop');
   if (wb) {
-    if (CFG.WHOP_URL) { wb.href = CFG.WHOP_URL; wb.removeAttribute('aria-disabled'); var sm = $('small', wb); if (sm) sm.remove(); wb.rel = 'noopener'; }
+    if (CFG.WHOP_URL) { wb.href = CFG.WHOP_URL; wb.removeAttribute('aria-disabled'); var sm = $('small', wb); if (sm) sm.remove(); wb.target = '_blank'; wb.rel = 'noopener'; }
     else wb.addEventListener('click', function (e) { e.preventDefault(); });
   }
 
